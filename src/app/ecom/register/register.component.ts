@@ -11,6 +11,7 @@ import { UserProfileDTO } from '../../models/UserProfileDTO';
 })
 export class RegisterComponent implements OnInit {
   user: UserProfileDTO;
+  flagAcceptJoin : boolean;
   constructor(private _userService: UserService,
     private _spinnerService: Ng4LoadingSpinnerService,
     private dialogRef:MatDialogRef<RegisterComponent>) {
